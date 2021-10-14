@@ -43,29 +43,3 @@ jobs:
           file: build/*/*.zip
           tag: ${{ github.ref }}
           file_glob: true
-
-  build-linux-clangpdb-gcc5:
-    name: Build Linux CLANGPDB/GCC5
-    runs-on: [self-hosted, macos, x64]
-    env:
-      JOB_TYPE: BUILD
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
-        with:
-          repository: wy414012/MacKernelSDK
-          path: MacKernelSDK
-      - name: CI Bootstrap
-        run: |
-          src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/wy414012/ocbuild/Yaming/ci-bootstrap.sh) && eval "$src" || exit 1
-
-      - run: xcodebuild -jobs 1 -configuration Debug
-      - run: xcodebuild -jobs 1 -configuration Release
-
-      - name: 打包临时工件
-        uses: actions/upload-artifact@v2
-        with:
-          name: REL8168-build
-          path: build/*/*.zip
-
-
