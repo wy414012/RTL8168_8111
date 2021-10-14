@@ -47,6 +47,8 @@ jobs:
   build-linux-clangpdb-gcc5:
     name: Build Linux CLANGPDB/GCC5
     runs-on: [self-hosted, macos, x64]
+    env:
+      JOB_TYPE: BUILD
     steps:
       - uses: actions/checkout@v2
       - uses: actions/checkout@v2
