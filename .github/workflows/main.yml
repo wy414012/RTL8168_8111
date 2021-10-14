@@ -43,5 +43,35 @@ jobs:
           file: build/*/*.zip
           tag: ${{ github.ref }}
           file_glob: true
+  build:
+    name: 开始自动构建检查使用xcode13.0
+    runs-on: [self-hosted, macos, x64]
+    env:
+      JOB_TYPE: BUILD
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: wy414012/MacKernelSDK
+          path: MacKernelSDK
+      - name: CI Bootstrap
+        run: |
+          src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/wy414012/ocbuild/Yaming/ci-bootstrap.sh) && eval "$src" || exit 1
 
+      - run: xcodebuild -jobs 1 -configuration Debug
+      - run: xcodebuild -jobs 1 -configuration Release
+
+      - name: 打包临时工件
+        uses: actions/upload-artifact@v2
+        with:
+          name: REL8168-build
+          path: build/*/*.zip
+      - name: 上传发布版本
+        if: github.event_name == 'release'
+        uses: svenstaro/upload-release-action@483c1e56f95e88835747b1c7c60581215016cbf2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/*/*.zip
+          tag: ${{ github.ref }}
+          file_glob: true
 
