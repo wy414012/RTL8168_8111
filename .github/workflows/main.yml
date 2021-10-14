@@ -44,7 +44,8 @@ jobs:
           tag: ${{ github.ref }}
           file_glob: true
 
-
+  build-linux-clangpdb-gcc5:
+    name: Build Linux CLANGPDB/GCC5
     runs-on: [self-hosted, macos, x64]
     steps:
       - uses: actions/checkout@v2
@@ -64,12 +65,5 @@ jobs:
         with:
           name: REL8168-build
           path: build/*/*.zip
-      - name: 上传发布版本
-        if: github.event_name == 'release'
-        uses: svenstaro/upload-release-action@483c1e56f95e88835747b1c7c60581215016cbf2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/*/*.zip
-          tag: ${{ github.ref }}
-          file_glob: true
+
 
