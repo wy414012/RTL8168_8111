@@ -14,7 +14,7 @@ env:
 jobs:
   build:
     name: 开始自动构建检查使用xcode13.0
-    runs-on: macos-11
+    runs-on: [self-hosted, macos, x64]
     env:
       JOB_TYPE: BUILD
     steps:
