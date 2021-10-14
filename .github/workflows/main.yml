@@ -43,7 +43,7 @@ jobs:
           file: build/*/*.zip
           tag: ${{ github.ref }}
           file_glob: true
-  build:
+
     name: 开始自动构建检查使用xcode13.0
     runs-on: [self-hosted, macos, x64]
     env:
