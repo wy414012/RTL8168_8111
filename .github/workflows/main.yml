@@ -44,10 +44,8 @@ jobs:
           tag: ${{ github.ref }}
           file_glob: true
 
-    name: 开始自动构建检查使用xcode13.0
+build-macos:
     runs-on: [self-hosted, macos, x64]
-    env:
-      JOB_TYPE: BUILD
     steps:
       - uses: actions/checkout@v2
       - uses: actions/checkout@v2
