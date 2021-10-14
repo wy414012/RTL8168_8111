@@ -13,7 +13,7 @@ env:
 
 jobs:
   build:
-    name: Build
+    name: 开始自动构建检查使用xcode13.0
     runs-on: macos-11
     env:
       JOB_TYPE: BUILD
@@ -30,14 +30,14 @@ jobs:
       - run: xcodebuild -jobs 1 -configuration Debug
       - run: xcodebuild -jobs 1 -configuration Release
 
-      - name: Upload to Artifacts
+      - name: 打包临时工件
         uses: actions/upload-artifact@v2
         with:
-          name: Artifacts
+          name: REL8168-build
           path: build/*/*.zip
-      - name: Upload to Release
+      - name: 上传发布版本
         if: github.event_name == 'release'
-        uses: svenstaro/upload-release-action@master
+        uses: svenstaro/upload-release-action@483c1e56f95e88835747b1c7c60581215016cbf2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: build/*/*.zip
