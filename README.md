@@ -11,7 +11,8 @@
 - 克隆依赖项到目录内`git clone https://github.com/wy414012/MacKernelSDK.git`
 - 编译Debug版本仅用于调试目的才使用`xcodebuild -jobs 1 -configuration Debug`
 - 调试错后即可开始编译REL稳定版本`xcodebuild -jobs 1 -configuration Release`
-
+### 注意 ###
+- 关于重原作者2.4.2版本切换过来需要断开网线接口 删除原本，放入下载的kext，让设备断电才可以正常使用
 ### 兼容性说明###
 - 当前支持：10.9+ -- 12.x已测试通过
 - 10.9之前需要使用32位构建
