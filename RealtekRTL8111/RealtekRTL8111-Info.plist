@@ -28,12 +28,29 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>as.Yaming.${PRODUCT_NAME:rfc1034identifier}</string>
+			<key>Driver Parameters</key>
+			<dict>
+				<key>disableASPM</key>
+				<true/>
+				<key>enableCSO6</key>
+				<true/>
+				<key>enableEEE</key>
+				<true/>
+				<key>enableTSO4</key>
+				<true/>
+				<key>enableTSO6</key>
+				<true/>
+				<key>intrMitigate</key>
+				<integer>53080</integer>
+				<key>rxPolling</key>
+				<true/>
+			</dict>
 			<key>Driver_Version</key>
 			<string>$MODULE_VERSION</string>
 			<key>IOClass</key>
 			<string>RTL8111</string>
 			<key>IOPCIMatch</key>
-			<string>0x816810ec 0x81681186</string>
+			<string>0x816810ec 0x81681186 0x250210ec 0x260010ec</string>
 			<key>IOProbeScore</key>
 			<integer>1000</integer>
 			<key>IOProviderClass</key>
@@ -42,20 +59,6 @@
 			<string>RTL8111</string>
 			<key>Vendor</key>
 			<string>Realtek</string>
-			<key>disableASPM</key>
-			<true/>
-			<key>enableCSO6</key>
-			<true/>
-			<key>enableEEE</key>
-			<true/>
-			<key>enableTSO4</key>
-			<true/>
-			<key>enableTSO6</key>
-			<true/>
-			<key>intrMitigate</key>
-			<integer>53080</integer>
-			<key>rxPolling</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>

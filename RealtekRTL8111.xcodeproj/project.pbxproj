@@ -3,24 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79CDA1AB26A98E0E003FE43C /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CDA1AA26A98E0E003FE43C /* libkmod.a */; };
 		D34D36B61AD2F62B00EEEC08 /* RealtekRTL8111.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D37BD69716C6065300C255A2 /* RealtekRTL8111.cpp */; };
-		D363E4B71BF2A04E00C8E36C /* RealtekRTL8111Linux-8040000.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D363E4B51BF2A04E00C8E36C /* RealtekRTL8111Linux-8040000.cpp */; };
+		D3C8EF0E22FA0BDF00F3BF68 /* RealtekRTL8111Hardware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C8EF0C22FA0BDF00F3BF68 /* RealtekRTL8111Hardware.cpp */; };
+		D3C8EF1222FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3C8EF0F22FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.cpp */; };
+		D3C8EF1422FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D3C8EF1022FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.hpp */; };
+		F074B616279E9ED0003549AA /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F074B615279E9ED0003549AA /* libkmod.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		79CDA1AA26A98E0E003FE43C /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = MacKernelSDK/Library/x86_64/libkmod.a; sourceTree = "<group>"; };
 		D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealtekRTL8111.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealtekRTL8111-Prefix.pch"; sourceTree = "<group>"; };
+		D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-V2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealtekRTL8111-V2-Prefix.pch"; sourceTree = "<group>"; };
 		D34D36C91AD2F7A900EEEC08 /* APPLE_LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
 		D34D36CA1AD2F7C500EEEC08 /* IONetworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IONetworkController.h; sourceTree = "<group>"; };
 		D34D36CB1AD2F7C500EEEC08 /* IONetworkInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IONetworkInterface.h; sourceTree = "<group>"; };
-		D363E4B41BF29B4D00C8E36C /* RealtekRTL8111Linux-8040000.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealtekRTL8111Linux-8040000.h"; sourceTree = "<group>"; };
-		D363E4B51BF2A04E00C8E36C /* RealtekRTL8111Linux-8040000.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "RealtekRTL8111Linux-8040000.cpp"; sourceTree = "<group>"; };
+		D34D782722FAED470065D59C /* r8168_dash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r8168_dash.h; sourceTree = "<group>"; };
 		D37A5F5B16CAF7D600644820 /* gpl.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gpl.txt; sourceTree = "<group>"; };
 		D37BD68316C605F500C255A2 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		D37BD68616C605F500C255A2 /* RealtekRTL8111-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealtekRTL8111-Info.plist"; sourceTree = "<group>"; };
@@ -30,6 +30,10 @@
 		D37BD69C16C6068D00C255A2 /* mii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mii.h; sourceTree = "<group>"; };
 		D37BD69D16C6068D00C255A2 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
 		D37BD69E16C6068D00C255A2 /* ethertool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ethertool.h; sourceTree = "<group>"; };
+		D3C8EF0C22FA0BDF00F3BF68 /* RealtekRTL8111Hardware.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RealtekRTL8111Hardware.cpp; sourceTree = "<group>"; };
+		D3C8EF0F22FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "RealtekRTL8111Linux-804704.cpp"; sourceTree = "<group>"; };
+		D3C8EF1022FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "RealtekRTL8111Linux-804704.hpp"; sourceTree = "<group>"; };
+		F074B615279E9ED0003549AA /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = MacKernelSDK/Library/x86_64/libkmod.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79CDA1AB26A98E0E003FE43C /* libkmod.a in Frameworks */,
+				F074B616279E9ED0003549AA /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +77,7 @@
 		D37BD68116C605F500C255A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79CDA1AA26A98E0E003FE43C /* libkmod.a */,
+				F074B615279E9ED0003549AA /* libkmod.a */,
 				D37BD68216C605F500C255A2 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -85,7 +89,6 @@
 				D37BD68316C605F500C255A2 /* Kernel.framework */,
 			);
 			name = "Other Frameworks";
-			path = MacKernelSDK/Headers;
 			sourceTree = "<group>";
 		};
 		D37BD68416C605F500C255A2 /* RealtekRTL8111 */ = {
@@ -93,8 +96,10 @@
 			children = (
 				D37BD69616C6065300C255A2 /* RealtekRTL8111.h */,
 				D37BD69716C6065300C255A2 /* RealtekRTL8111.cpp */,
-				D363E4B41BF29B4D00C8E36C /* RealtekRTL8111Linux-8040000.h */,
-				D363E4B51BF2A04E00C8E36C /* RealtekRTL8111Linux-8040000.cpp */,
+				D3C8EF0C22FA0BDF00F3BF68 /* RealtekRTL8111Hardware.cpp */,
+				D3C8EF0F22FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.cpp */,
+				D3C8EF1022FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.hpp */,
+				D34D782722FAED470065D59C /* r8168_dash.h */,
 				D37BD69B16C6068D00C255A2 /* linux.h */,
 				D37BD69C16C6068D00C255A2 /* mii.h */,
 				D37BD69D16C6068D00C255A2 /* if_ether.h */,
@@ -111,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D37BD68616C605F500C255A2 /* RealtekRTL8111-Info.plist */,
-				D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-Prefix.pch */,
+				D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-V2-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -123,30 +128,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C8EF1422FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111 */ = {
+		D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111-V2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111" */;
+			buildConfigurationList = D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111-V2" */;
 			buildPhases = (
 				D34D36B51AD2F62B00EEEC08 /* Sources */,
 				D34D36B81AD2F62B00EEEC08 /* Frameworks */,
 				D34D36B91AD2F62B00EEEC08 /* Headers */,
 				D34D36BE1AD2F62B00EEEC08 /* Resources */,
 				D34D36C01AD2F62B00EEEC08 /* Rez */,
-				793F02A726AE6FF800388E12 /* Archive */,
+				F0AB19BC279EA31B0057BDC0 /* Archive */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RealtekRTL8111;
-			packageProductDependencies = (
-			);
+			name = "RealtekRTL8111-V2";
 			productName = RealtekRTL8111;
 			productReference = D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111.kext */;
 			productType = "com.apple.product-type.kernel-extension";
@@ -157,8 +161,7 @@
 		D37BD67416C605F500C255A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Laura Müller";
 			};
 			buildConfigurationList = D37BD67716C605F500C255A2 /* Build configuration list for PBXProject "RealtekRTL8111" */;
@@ -169,13 +172,11 @@
 				en,
 			);
 			mainGroup = D37BD67216C605F500C255A2;
-			packageReferences = (
-			);
 			productRefGroup = D37BD68016C605F500C255A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111 */,
+				D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111-V2 */,
 			);
 		};
 /* End PBXProject section */
@@ -201,7 +202,7 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		793F02A726AE6FF800388E12 /* Archive */ = {
+		F0AB19BC279EA31B0057BDC0 /* Archive */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,7 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D363E4B71BF2A04E00C8E36C /* RealtekRTL8111Linux-8040000.cpp in Sources */,
+				D3C8EF1222FA0D0C00F3BF68 /* RealtekRTL8111Linux-804704.cpp in Sources */,
+				D3C8EF0E22FA0BDF00F3BF68 /* RealtekRTL8111Hardware.cpp in Sources */,
 				D34D36B61AD2F62B00EEEC08 /* RealtekRTL8111.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,14 +239,14 @@
 		D34D36C21AD2F62B00EEEC08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.2.9;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-Prefix.pch";
-				GCC_VERSION = "";
+				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-V2-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RealtekRTL8111/RealtekRTL8111-Info.plist";
 				INSTALL_GROUP = "$(GROUP)";
 				INSTALL_OWNER = "$(USER)";
@@ -254,9 +256,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 2.2.9;
-				MODULE_NAME = as.Yaming.RealtekRTL8111;
+				MODULE_NAME = com.insanelymac.RealtekRTL8111;
 				MODULE_VERSION = 2.2.9;
-				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = as.Yaming.RealtekRTL8111;
 				PRODUCT_NAME = RealtekRTL8111;
 				SDKROOT = macosx;
@@ -267,15 +268,16 @@
 		D34D36C31AD2F62B00EEEC08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.2.9;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-Prefix.pch";
-				GCC_VERSION = "";
+				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-V2-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RealtekRTL8111/RealtekRTL8111-Info.plist";
 				INSTALL_GROUP = "$(GROUP)";
 				INSTALL_OWNER = "$(USER)";
@@ -283,12 +285,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
 				);
-				LLVM_LTO = NO;
+				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 2.2.9;
-				MODULE_NAME = as.Yaming.RealtekRTL8111;
+				MODULE_NAME = com.insanelymac.RealtekRTL8111;
 				MODULE_VERSION = 2.2.9;
-				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = as.Yaming.RealtekRTL8111;
 				PRODUCT_NAME = RealtekRTL8111;
 				SDKROOT = macosx;
@@ -301,18 +302,26 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -343,13 +352,22 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111" */ = {
+		D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111-V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D34D36C21AD2F62B00EEEC08 /* Debug */,
