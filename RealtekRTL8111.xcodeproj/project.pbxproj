@@ -256,7 +256,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 2.2.9;
-				MODULE_NAME = com.insanelymac.RealtekRTL8111;
+				MODULE_NAME = as.Yaming.RealtekRTL8111;
 				MODULE_VERSION = 2.2.9;
 				PRODUCT_BUNDLE_IDENTIFIER = as.Yaming.RealtekRTL8111;
 				PRODUCT_NAME = RealtekRTL8111;
@@ -288,7 +288,7 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 2.2.9;
-				MODULE_NAME = com.insanelymac.RealtekRTL8111;
+				MODULE_NAME = as.Yaming.RealtekRTL8111;
 				MODULE_VERSION = 2.2.9;
 				PRODUCT_BUNDLE_IDENTIFIER = as.Yaming.RealtekRTL8111;
 				PRODUCT_NAME = RealtekRTL8111;
