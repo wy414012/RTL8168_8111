@@ -13,12 +13,12 @@ env:
 
 jobs:
   build:
-    name: 开始自动构建检查使用xcode13.2
-    runs-on: macos-11
+    name: xcode-latest-build
+    runs-on: macos-latest
     env:
       JOB_TYPE: BUILD
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: CI Bootstrap
         run: |
           src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/wy414012/ocbuild/Yaming/ci-bootstrap.sh) && eval "$src" || exit 1
@@ -27,7 +27,7 @@ jobs:
       - run: xcodebuild -jobs 1 -configuration Release
 
       - name: 打包临时工件
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: REL8168-build
           path: build/*/*.zip
