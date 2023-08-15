@@ -14,14 +14,14 @@ env:
 jobs:
   build:
     name: xcode-latest-build
-    runs-on: macos-latest
+    runs-on: macos-13
     env:
       JOB_TYPE: BUILD
     steps:
       - uses: actions/checkout@v3
       - name: CI Bootstrap
         run: |
-          src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/wy414012/ocbuild/Yaming/ci-bootstrap.sh) && eval "$src" || exit 1
+          src=$(/usr/bin/curl -LfsS https://raw.githubusercontent.com/wy414012/ocbuild/Yaming/ci-bootstrap.sh) && eval "$src" || exit 1
 
       - run: xcodebuild -jobs 1 -configuration Debug
       - run: xcodebuild -jobs 1 -configuration Release
